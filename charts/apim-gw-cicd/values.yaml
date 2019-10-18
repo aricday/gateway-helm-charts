@@ -1,11 +1,11 @@
-nexusAdminPassword: "admin123"
+nexusAdminPassword: "7layer"
 
 sonatype-nexus:
 
   nexusProxy:
     env:
-      nexusDockerHost: docker.example.com
-      nexusHttpHost: nexus.example.com
+      nexusDockerHost: docker.cicd.aricday.net
+      nexusHttpHost: nexus.cicd.aricday.net
 
   ingress:
     enabled: true
@@ -27,7 +27,7 @@ jenkins:
 
     # AdminPassword:
     ServiceType: NodePort # change to NodePort once working
-    HostName: jenkins.example.com
+    HostName: jenkins.cicd.aricday.net
 
     Ingress:
       Path: /*
@@ -37,7 +37,7 @@ jenkins:
       TLS:
         - secretName: tls
           hosts:
-            - jenkins.example.com
+            - jenkins.cicd.aricday.net
 
     InstallPlugins:
       - kubernetes:1.13.5

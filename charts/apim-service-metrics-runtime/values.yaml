@@ -39,11 +39,11 @@ grafana:
       kubernetes.io/ingress.class: gce
       kubernetes.io/ingress.global-static-ip-name: "grafana-ip"
     hosts:
-      - grafana.example.com
+      - grafana.cicd.aricday.net
     tls:
       - secretName: grafana-tls
         hosts:
-          - grafana.example.com
+          - grafana.cicd.aricday.net
 
   adminUser: admin
   # adminPassword:
