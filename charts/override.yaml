@@ -4,29 +4,29 @@
 # Use this file to install umbrella chart, e.g. helm install mychart --name mychart -f override.yaml
 
 apim-gw-cert-manager: &acmeEmail "aric.day@broadcom.com"                                       # Email of your google account for your cluster, e.g. example@gmail.com
-apim-gw-cert-manager: &certDomainName "*.cicd.apim.west.com"             # Domain name of the cert to be generated, e.g. *.cluster1.example.com
+apim-gw-cert-manager: &certDomainName "*.cicd.aricday.net"             # Domain name of the cert to be generated, e.g. *.cluster1.example.com
 apim-gw-cert-manager: &prodCertificateName "prod"                         # Define the name of the certificate in your cluster
 apim-gw-cert-manager: &secretName "tls"                                   # Define the name of the key in your cluster, which is used by ingress later
 apim-gw-cert-manager: &stagingEnabled false                               # Generate staging level key
 apim-gw-cert-manager: &prodEnabled true                                   # Generate production level key
 apim-gw-cert-manager: null
 
-apim-gw-cicd: &nexusDockerHost "docker.cicd.apim.west.com"               # Nexus docker repo hostname assigned
-apim-gw-cicd: &nexusHttpHost "nexus.cicd.apim.west.com"                  # Nexus hostname assigned
-apim-gw-cicd: &nexusIp "34.96.107.10"                          # Nexus IP assigned
+apim-gw-cicd: &nexusDockerHost "docker.cicd.aricday.net"               # Nexus docker repo hostname assigned
+apim-gw-cicd: &nexusHttpHost "nexus.cicd.aricday.net"                  # Nexus hostname assigned
+apim-gw-cicd: &nexusIp "35.186.224.180"                          # Nexus IP assigned
 apim-gw-cicd: &jenkinsAdminPassword "7layer"                  # Define admin password for Jenkins
 apim-gw-cicd: &nexusAdminPassword "7layer"                      # Define admin password for Nexus
-apim-gw-cicd: &jenkinsHostName "jenkins.cicd.apim.west.com"              # Jenkins hostname assigned
-apim-gw-cicd: &jenkinsIp "34.98.120.26"                      # Jenkins IP assigned
+apim-gw-cicd: &jenkinsHostName "jenkins.cicd.aricday.net"              # Jenkins hostname assigned
+apim-gw-cicd: &jenkinsIp "35.227.232.39"                      # Jenkins IP assigned
 apim-gw-cicd: null
 
 apim-service-metrics-runtime: &grafanaAdminPassword "7layer"  # Define admin password for grafana
-apim-service-metrics-runtime: &grafanaHost "grafana.cicd.apim.west.com"  # Grafana hostname assigned
-apim-service-metrics-runtime: &grafanaIP "35.227.232.39"      # Grafana IP assigned
+apim-service-metrics-runtime: &grafanaHost "grafana.cicd.aricday.net"  # Grafana hostname assigned
+apim-service-metrics-runtime: &grafanaIP "34.95.119.36"      # Grafana IP assigned
 apim-service-metrics-runtime: null
 
-apim-logs-runtime: &kibanaHost "kibana.cicd.apim.west.com/*"             # Kibana hostname assigned
-apim-logs-runtime: &kibanaIp "34.95.119.36"                   # Kibana IP assigned
+apim-logs-runtime: &kibanaHost "kibana.cicd.aricday.net/*"             # Kibana hostname assigned
+apim-logs-runtime: &kibanaIp "35.244.231.164"                   # Kibana IP assigned
 apim-logs-runtime: null
 
 
