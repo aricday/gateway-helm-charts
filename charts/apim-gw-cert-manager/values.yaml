@@ -10,7 +10,7 @@ prodCertificateName: cicd-aricday-net-prod
 prodCertificateSecretName: cicd-aricday-net-tls-prod
 
 dnsProviderName: clouddns
-certDomainName: '*.cicd.aricday.net'
+certDomainName: '*.aricday.net'
 
 acmeEmail: # set email address here
 
