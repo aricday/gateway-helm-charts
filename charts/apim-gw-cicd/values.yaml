@@ -4,13 +4,8 @@ sonatype-nexus:
 
   nexusProxy:
     env:
-<<<<<<< HEAD
-      nexusDockerHost: docker-cicd.aricday.net
-      nexusHttpHost: nexus-cicd.aricday.net
-=======
       nexusDockerHost: docker.example.com
       nexusHttpHost: nexus.example.com
->>>>>>> parent of af41968... update
 
   ingress:
     enabled: true
@@ -32,11 +27,7 @@ jenkins:
 
     # AdminPassword:
     ServiceType: NodePort # change to NodePort once working
-<<<<<<< HEAD
-    HostName: jenkins-cicd.aricday.net
-=======
     HostName: jenkins.example.com
->>>>>>> parent of af41968... update
 
     Ingress:
       Path: /*
@@ -46,11 +37,7 @@ jenkins:
       TLS:
         - secretName: tls
           hosts:
-<<<<<<< HEAD
-            - jenkins-cicd.aricday.net
-=======
             - jenkins.example.com
->>>>>>> parent of af41968... update
 
     InstallPlugins:
       - kubernetes:1.13.5
