@@ -31,4 +31,4 @@ kibana:
     tls:
       - secretName: kibana-tls
         hosts:
-          - grafana.cicd.aricday.net
+          - grafana-cicd.aricday.net
