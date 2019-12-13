@@ -2,15 +2,19 @@ stagingEnabled: true
 prodEnabled: false
 
 stagingClusterIssuerName: letsencrypt-staging
-stagingCertificateName: cicd-aricday-net-staging
-stagingCertificateSecretName: cicd-aricday-net-tls-staging
+stagingCertificateName: stable1-apimgcp-com-staging
+stagingCertificateSecretName: stable1-apimgcp-com-tls-staging
 
 prodClusterIssuerName: letsencrypt-prod
-prodCertificateName: cicd-aricday-net-prod
-prodCertificateSecretName: cicd-aricday-net-tls-prod
+prodCertificateName: stable1-apimgcp-com-prod
+prodCertificateSecretName: stable1-apimgcp-com-tls-prod
 
 dnsProviderName: clouddns
+<<<<<<< HEAD
 certDomainName: '*.aricday.net'
+=======
+certDomainName: '*.stable1.apimgcp.com'
+>>>>>>> parent of af41968... update
 
 acmeEmail: # set email address here
 
