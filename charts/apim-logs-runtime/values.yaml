@@ -27,8 +27,12 @@ kibana:
       kubernetes.io/ingress.class: gce
       kubernetes.io/ingress.global-static-ip-name: "kibana-ip"
     hosts:
-      - kibana.cicd.aricday.net/*
+      - kibana.example.com/*
     tls:
       - secretName: kibana-tls
         hosts:
+<<<<<<< HEAD
           - grafana-cicd.aricday.net
+=======
+          - grafana.example.com
+>>>>>>> parent of af41968... update
